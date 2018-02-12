@@ -108,7 +108,7 @@ def roundup(x):
 def saveit(event):
 	global dobjects,ditems,cnvw,cnvh
 	fname=asksv()
-	txt='$W='+str(cnvw)+'\n'+'$H'+str(cnvh)+'\n$BEG\n'
+	txt='$W=='+str(cnvw)+'\n'+'$H=='+str(cnvh)+'\n$BEG\n'
 	for n in ditems:
 		txt+=n['mode']+'::'+n['col']+'::'+str(n['x1'])+','+str(n['y1'])+','+str(n['x2'])+','+str(n['y2'])+'\n'
 	txt+='$END'
